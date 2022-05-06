@@ -1,0 +1,255 @@
+:root{
+    --white:#FFFFFF;
+    --bg-light-primary:#F7F7F7;
+    --bg-light-secondary:#c2d2ee;
+    --call-to-action:#F05454;
+    --text:#06192f;
+    --nav-font-hight : 1.8rem;
+    --sidebar-font-size:1.4rem;
+    --content-font : 1.2rem;
+    --footer-content-width: clamp(18rem, 20vw, 30rem);
+    --border-bottom:#ffffff00;
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    background-color: var(--bg-light-primary);
+}
+
+
+/* navigation */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--bg-light-secondary);
+    height: 8vh;
+    flex-basis: auto;
+}
+
+
+.nav-child-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-child-one > img{
+    width: 7vh;
+}
+
+
+.nav-child-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-child-two > ul{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.nav-child-two > ul > li{
+    padding: 0rem 1rem 00rem 1rem;
+    list-style: none;
+    font-size: var(--nav-font-hight) ;
+    color: var(--text);
+}
+
+
+.anc{
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 700;
+    border-bottom: 4px solid var(--border-bottom);
+}
+
+@keyframes cchange {
+    from{
+        border-bottom: 4px solid var(--border-bottom);
+    }
+    to{
+        border-bottom: 4px solid var(--call-to-action);
+    }
+}
+
+.anc:hover{
+    animation-name: cchange;
+    animation-duration: 0.4s;
+    border-bottom: 4px solid var(--call-to-action);
+    color: var(--call-to-action);
+}
+
+
+.main{
+    height: 93vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-child-sidebar{
+    width: 20vw;
+    height: 93vh;
+    background-color: var(--white);
+}
+
+.main-child-sidebar > ul{
+    height: 70vh;
+    padding: 5vh 1vw 5vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-child-sidebar > ul > li{
+    list-style: none;
+    font-size: var(--sidebar-font-size);
+}
+
+.main-child-content{
+    height: 93vh;
+    width: 80vw;
+    overflow: scroll;
+    flex-shrink: 0;
+}
+
+
+.cards{
+    width: 77vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.card{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--text);
+    border-radius: 0.5rem;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.card > img{
+    width: 18vw;
+    height: 25vh;
+}
+
+.card > span{
+    font-size: var(--content-font);
+    text-align: center;
+    padding-top: 0.8rem;
+}
+
+.hero{
+    width: 77vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    align-items: center;
+}
+
+.hero > img{
+    width: 60vw;
+}
+
+.hero > span{
+    margin: 1.8rem;
+    font-size: var(--sidebar-font-size);
+}
+
+
+
+
+.exports{
+    padding-top:4rem ;
+}
+
+.exports > h1{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+.footer{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--bg-light-secondary);
+}
+
+
+.contact{
+    width: var(--footer-content-width);
+    padding: 2vw;
+    font-size:var(--content-font)
+}
+
+.link > a{
+    display: flex;
+    flex-direction: row;
+    width: var(--footer-content-width);
+}
+
+.link > img{
+    height: 2.9vh;
+}
+
+.link > span{
+    padding-left: 1rem;
+}
+
+.FTA{
+    margin-top: 10rem;
+    padding: 2.9rem;
+}
+
+.ccard > img{
+    width: 10vw;
+    height: 15vh;
+    border: 2px solid var(--text);
+}
+
+.conc{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 72vw;
+    justify-content: space-around;
+}
+
+
+.address{
+    display: flex;
+    flex-direction: column;
+    width: var(--footer-content-width);
+    padding: 2vw;
+    font-size:var(--content-font)
+}
+
+
+.sitestats{
+    display: flex;
+    flex-direction: column;
+    width:var(--footer-content-width) ;
+    padding: 2vw;
+    font-size:var(--content-font)
+}
